@@ -1,0 +1,45 @@
+<?php
+$timeset = 'Asia/Jakarta'; // reference for timezone http://php.net/manual/en/timezones.php
+$mkato_smtp = 'user.csv';
+$mkato_list = [
+	'file'				=> 'tes.txt',
+	'removeduplicate'	=> false,
+];
+
+
+$mkato_setting = [
+	'color'					=> true,
+	'bccmode'				=> true, // true untuk bcc - false untuk mode to
+	'2xsend'				=> true, // 2x send  
+	'removelist_aftersend'	=> false,// Lom fix (masa perbaikan)
+	'max'					=> '1', // total of emails to send per sending
+	'delay'					=> '0', // delay for send
+	'insertemailtest'		=> true, 
+	'emailtest'				=> 'sayaidiot@hotmail.com', // input your email , can be multi emails
+	'randomparam'			=> true,
+	'link'					=> 'https://google.com', // input link here to use a random link fiture
+	'header'				=> false,
+];
+
+$mkato_inbox = [
+	#--start--#
+	[
+		'to' 					=> 'customer-viamail-holdlockamz##number_normal_8##@live.com', // to
+		'fname' 				=> 'Support A͎ma=?UTF-8?B?em/JtA=?=', // from name  Aâ€Œpâ€Œpâ€Œle  | N E T F L I Xâ€Œ APP | TeamNâ€Œeâ€Œfâ€Œlix |  Apâ€Œplâ€Œeâ€Œâ€Œ â€Œâ€ŒIâ€ŒDâ€Œâ€Œ
+		'subject' 				=> "[ e-Newsletter ] recent a month-end statement issues order at 02/21/2021 (Gracias por su orden) - actualización de pedido reciente Más información sobre el pago pagado hoy",
+		'attachfile'			=> '', // nama file pdf, kalau gak mau attach file, jangan diisi kolomnya
+		'attachname' 			=> "CaseStatementX-ID5##number_normal_5##.png", // nama yang diinginkan untuk ganti nama tes
+		'letter'				=> 'amazon.html',
+	],
+	#--end--#
+
+
+];
+
+$mkato_header = array(
+//'CC|',
+);
+
+
+
+?>
